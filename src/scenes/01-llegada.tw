@@ -1,0 +1,46 @@
+:: Aeropuerto
+<<bg "background_01" "slow">>
+<<beat>>Las puertas del aeropuerto se abren.<</beat>>
+<<beat>>Lo primero que conozco de Buenos Aires es su olor. Húmedo y cálido, con un dejo a río, a nafta y a algo dulce, como si cerca acabaran de sacar facturas del horno.<</beat>>
+<<beat>><<bg "background_02">>Salgo del aeropuerto con una sola valija y una mochila. Todo lo demás que tengo lo llevo adentro.<</beat>>
+<<beat>><<choices>>[[Subir al taxi|Taxi]]<</choices>><</beat>>
+
+
+:: Taxi
+<<bg "background_03">>
+<<beat>><<say "taxista">>— ¿Primera vez en Buenos Aires?<</say>><</beat>>
+<<beat>><<say "yo">>— Sí. Primera vez.<</say>><</beat>>
+<<beat>><<say "taxista">>— Ah, entonces mirá bien por la ventana. Esta ciudad no se repite.<</say>><</beat>>
+<<beat>><<bg "background_05-face01">>Miro mi reflejo en el vidrio. Una noche sin dormir en el avión, el pelo que nunca llegué a arreglar. Bueno. Así me va a ver esta ciudad por primera vez.<</beat>>
+<<beat>><<choices>>
+	[[Mirar por la ventana|Autopista]]
+	[[Elegir mi apariencia|Apariencia]]
+<</choices>><</beat>>
+
+
+:: Apariencia
+<<bg `"background_05-face0" + $apariencia`>>
+<<beat>>¿Cómo me veo?<<choices>>
+	[[Apariencia 1|Apariencia confirmar][$apariencia to 1]]
+	[[Apariencia 2|Apariencia confirmar][$apariencia to 2]]
+	[[Apariencia 3|Apariencia confirmar][$apariencia to 3]]
+<</choices>><</beat>>
+
+
+:: Apariencia confirmar
+<<bg `"background_05-face0" + $apariencia` "cut">>
+<<beat>>¿Estás conforme con tu apariencia?<<choices>>
+	<<if $apariencia is 1>>[[Sí, continuar el juego|Autopista]]<</if>>
+	[[No, volver a elegir|Apariencia]]
+<</choices>><</beat>>
+
+
+:: Autopista
+<<bg "background_06-01">>
+<<beat>>Al principio la ciudad se esconde detrás de la autopista: depósitos, carteles publicitarios, casas bajas con techos planos donde se seca la ropa, como banderas de pequeños países.<</beat>>
+<<beat>><<bg "background_06-02">><</beat>>
+<<beat>><<bg "background_06-03">><</beat>>
+<<beat>><<bg "background_07-face01">>Y de pronto se abre. Pasamos por…<<choices>>
+	[[Avenida 9 de Julio. El Obelisco.|Nueve de Julio]]
+	[[Avenida de Mayo, fachadas antiguas, balcones de hierro forjado.|Avenida de Mayo]]
+<</choices>><</beat>>

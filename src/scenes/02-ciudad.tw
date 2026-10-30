@@ -1,0 +1,43 @@
+:: Nueve de Julio
+<<bg "background_08-01-1">>
+<<beat>><</beat>>
+<<beat>><<bg "background_08-01-2">>Es tan ancha que parece imposible cruzarla en un solo semáforo. Es la avenida más ancha del mundo, y la estoy viendo con mis propios ojos.<</beat>>
+<<beat>><<bg "background_08-01-3">>En el medio, como una aguja blanca que cose la ciudad al cielo, está el Obelisco. El sol lo ilumina tanto que hasta encandila un poco.<</beat>>
+<<nextscene "Escena impresionante">>
+
+
+:: Avenida de Mayo
+<<bg "background_08-02-1">>
+<<beat>><</beat>>
+<<beat>><<bg "background_08-02-2">>Fachadas parisinas con molduras, un poco descascaradas en los bordes, pero eso solo les suma elegancia. Balcones de hierro forjado como encaje, y en cada balcón hay flores, una bicicleta o un gato.<</beat>>
+<<beat>><<bg "background_08-02-3">>En las vidrieras hay letras con firuletes en rojo, dorado y verde. El taxista me dice que eso se llama «fileteado». Hasta el cartel de una carnicería parece una invitación a un baile.<</beat>>
+<<nextscene "Escena impresionante">>
+
+
+:: Escena impresionante
+<<bg "background_09-face01">>
+<<beat>>Después veo una escena absolutamente impresionante.<</beat>>
+<<beat>>El taxista pasa por…<<choices>>
+	[[Jacarandás en flor, pétalos violetas sobre el asfalto.|Jacarandas]]
+	[[Una esquina. Un colectivo pintado, un kiosco de diarios, unos viejitos en un banco tomando mate.|Esquina]]
+<</choices>><</beat>>
+
+
+:: Jacarandas
+<<bg "background_10-01-1">>
+<<beat>>Toda la ciudad está teñida de lila: los jacarandás florecen como si alguien hubiera derramado acuarela sobre las calles.<</beat>>
+<<beat>><<bg "background_10-01-2">>Los pétalos cubren los capós de los autos, los escalones, los hombros de la gente. El taxi avanza sobre una alfombra violeta.<</beat>>
+<<nextscene "Dormida">>
+
+
+:: Esquina
+<<bg "background_10-02-1">>
+<<beat>>En la esquina ruge un colectivo pintado como un carromato de circo.<</beat>>
+<<beat>><<bg "background_10-02-2">>Junto al kiosco, dos viejitos discuten de fútbol mientras se pasan el mate, como quien pasa algo muy importante. De la puerta abierta de una panadería sale olor a medialunas.<</beat>>
+<<nextscene "Dormida">>
+
+
+:: Dormida
+<<bg "background_11-face01" "slow">>
+<<beat>>Apoyo la frente en el vidrio. La ciudad es ruidosa, cálida, un poco gastada, y no se parece a ningún lugar donde haya estado. Y me quedo dormida.<</beat>>
+<<nextscene "Departamento">>

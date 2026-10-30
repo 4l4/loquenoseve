@@ -1,0 +1,11 @@
+:: StoryTitle
+Lo que no se ve
+
+
+:: StoryData
+{
+  "ifid": "582B09AF-58CA-4418-8C76-0454AB749DFD",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Inicio"
+}

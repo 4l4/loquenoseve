@@ -1,0 +1,14 @@
+:: StoryInit
+/* Variables guardadas para todo el juego (ver docs/plot.md) */
+<<set $apariencia to 1>>
+<<set $regla to "">>    /* "mayor" | "tres_veces" | "mano_derecha" */
+<<set $fecha to "">>    /* "viernes" | "kimjang" | "enkutatash" */
+<<set $cabala to "">>   /* "escupir" | "limon" | "unas" */
+<<set $puntos to 0>>    /* puntos porteños */
+
+/* Enlaces a las otras partes del proyecto: reemplazar por las URLs reales */
+<<set setup.links to {
+  mapa:     "#",
+  recetas:  "#",
+  pelicula: "#"
+}>>

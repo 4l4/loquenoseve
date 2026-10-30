@@ -1,0 +1,1402 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="2583.42px" height="4349.98px"
+        style="transform-origin: 0px 0px 0px;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style xmlns="http://www.w3.org/2000/svg" type="text/css"><![CDATA[
+        * {
+            text-rendering: geometricprecision !important;
+        }
+        ]]><![CDATA[@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url("https://mirostatic.com/app/static/a73798e3d459e1bc.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noto Sans Italic'), local('NotoSans-Italic'), url("https://mirostatic.com/app/static/a8edd710f88715d4.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans Medium'), local('NotoSans-Medium'), url("https://mirostatic.com/app/static/006d7e33e60b9e12.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Noto Sans Medium Italic'), local('NotoSans-MediumItalic'), url("https://mirostatic.com/app/static/31387059566a3171.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Noto Sans SemiBold'), local('NotoSans-SemiBold'), url("https://mirostatic.com/app/static/526dd53b40975c37.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Noto Sans SemiBold Italic'), local('NotoSans-SemiBoldItalic'), url("https://mirostatic.com/app/static/e73d4fdd87d7e319.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url("https://mirostatic.com/app/static/9f11d6779c14d2bc.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'), url("https://mirostatic.com/app/static/888e13e017cedc15.woff2") format('woff2');
+}
+]]><![CDATA[@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/800985e1502d12bf.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/d8a7ca42a20caea5.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/3cc74c1d3919bd5c.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/f0481285dc248cf0.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/2f5e8dcf6e47bf00.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/0e625f45b71a26f1.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/645c27eb7d93eca8.woff2") format('woff2');
+}
+]]><![CDATA[@font-face {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://mirostatic.com/app/static/c82745469cf22727.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  src: url("https://mirostatic.com/app/static/85b5679bd9ca4dc6.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://mirostatic.com/app/static/b157b39f41cffc87.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 700;
+  src: url("https://mirostatic.com/app/static/c9083158d2c04912.woff2") format('woff2');
+}
+]]><![CDATA[@font-face {
+  font-family: 'Noto Sans Hebrew';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Hebrew Regular'), local('Noto Sans Hebrew-Regular'), url("https://mirostatic.com/app/static/7ebe1dcf0343326c.woff2") format('woff2'), url("https://mirostatic.com/app/static/6c11f037d6968262.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans Hebrew';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Hebrew Bold'), local('Noto Sans Hebrew-Bold'), url("https://mirostatic.com/app/static/d2883e2f177d0dad.woff2") format('woff2'), url("https://mirostatic.com/app/static/8546991909eadbc9.woff") format('woff');
+}
+]]><![CDATA[@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Japanese Regular'), local('Noto Sans Japanese-Regular'), url("https://mirostatic.com/app/static/9320b3c07ab79383.woff2") format('woff2'), url("https://mirostatic.com/app/static/a43be2cbcfc0b250.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Japanese Bold'), local('Noto Sans Japanese-Bold'), url("https://mirostatic.com/app/static/7ab032c73212439f.woff2") format('woff2'), url("https://mirostatic.com/app/static/29f177f4466bd7a1.woff") format('woff');
+}
+]]><![CDATA[@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url("https://mirostatic.com/app/static/7a5b625774730d22.woff2") format('woff2'), url("https://mirostatic.com/app/static/2d84dc606f1fb88e.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url("https://mirostatic.com/app/static/fa5a3d9073cdd58f.woff2") format('woff2'), url("https://mirostatic.com/app/static/7ded243557c83342.woff") format('woff');
+}
+]]></style><path id="LineHeadArrow2" d="M-12.727272727272727,-7.545454545454545 L0,0 L-12.727272727272727,7.545454545454545 Z"></path></defs><rect id="svg-board-background-color" width="100%" height="100%" fill="#f2f2f2"></rect><g data-widget-id="3458764688611877629"><g width="952px" height="111px"  transform="translate(837.22, 152.62) scale(1) rotate(0, 476, 55.5)"><svg
+	width="952"
+	height="111"
+	shape-border-width="shape-background"
+	style="width:952px; height: 111px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1110740825768">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+			clip-path="url(#1110740825768)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="111px"  transform="translate(837.22, 152.62) rotate(0, 476, 55.5)"><g transform="translate(5.550000000000001, 5.550000000000001)"><text xml:space="preserve" x="247.33114166259764" y="57.95" width="446.2377166748047" textLength="446.2377166748047" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >Ese es el equipaje que llevo conmigo</text></g></g></g><g data-widget-id="3458764688611877631"><g width="952px" height="111px"  transform="translate(837.22, 374.62) scale(1) rotate(0, 476, 55.5)"><svg
+	width="952"
+	height="111"
+	shape-border-width="shape-background"
+	style="width:952px; height: 111px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="493692115830">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+			clip-path="url(#493692115830)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="111px"  transform="translate(837.22, 374.62) rotate(0, 476, 55.5)"><g transform="translate(5.550000000000001, 5.550000000000001)"><text xml:space="preserve" x="253.67511291503905" y="57.95" width="433.5497741699219" textLength="433.5497741699219" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >SONIDO: la campanita de la puerta.</text></g></g></g><g data-widget-id="3458764688611877632"><g width="952px" height="239px"  transform="translate(837.22, 595.62) scale(1) rotate(0, 476, 119.5)"><svg
+	width="952"
+	height="239"
+	shape-border-width="shape-background"
+	style="width:952px; height: 239px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1241252551280">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="239"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="239"
+			rx="0"
+			ry="0"
+			clip-path="url(#1241252551280)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="239px"  transform="translate(837.22, 595.62) rotate(0, 476, 119.5)"><g transform="translate(11.950000000000001, 11.950000000000001)"><text xml:space="preserve" x="41.00423126220704" y="79.55" width="852.8515319824219" textLength="852.8515319824219" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >FONDO: entra al café un chico joven. Pelo oscuro y rizado, campera al </text><text xml:space="preserve" x="27.848233032226574" y="115.55" width="879.1635284423828" textLength="879.1635284423828" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >hombro, una bolsa de la panadería en la mano. [es el chico de la familia </text><text xml:space="preserve" x="271.3251159667969" y="151.55" width="385.44976806640625" textLength="385.44976806640625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >ítalo-​argentina del documental]</text></g></g></g><g data-widget-id="3458764688611877633"><g width="952px" height="111px"  transform="translate(837.14, 1829.63) scale(1) rotate(0, 476, 55.5)"><svg
+	width="952"
+	height="111"
+	shape-border-width="shape-background"
+	style="width:952px; height: 111px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1168315330409">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+			clip-path="url(#1168315330409)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="111px"  transform="translate(837.14, 1829.63) rotate(0, 476, 55.5)"><g transform="translate(5.550000000000001, 5.550000000000001)"><text xml:space="preserve" x="12.070262145996082" y="39.95" width="923.5194702148438" textLength="923.5194702148438" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >Se sienta a mi mesa sin pedir permiso, y por alguna razón no me parece un </text><text xml:space="preserve" x="277.153125" y="75.95" width="386.59375" textLength="386.59375" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >atrevimiento. Me siento a gusto</text></g></g></g><g data-widget-id="3458764688611877636"><g width="952px" height="178px"  transform="translate(837.14, 2604.63) scale(1) rotate(0, 476, 89)"><svg
+	width="952"
+	height="178"
+	shape-border-width="shape-background"
+	style="width:952px; height: 178px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="107368472138">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="178"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="178"
+			rx="0"
+			ry="0"
+			clip-path="url(#107368472138)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="178px"  transform="translate(837.14, 2604.63) rotate(0, 476, 89)"><g transform="translate(8.9, 8.9)"><text xml:space="preserve" x="11.502244567871116" y="34.099999999999994" width="917.9555053710938" textLength="917.9555053710938" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >Unos días después me muestra San Telmo. Acá las calles son de adoquines </text><text xml:space="preserve" x="20.524263000488304" y="70.1" width="899.9114685058594" textLength="899.9114685058594" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >que todavía recuerdan a los caballos. En la feria del domingo se vende de </text><text xml:space="preserve" x="36.90423736572268" y="106.1" width="867.1515197753906" textLength="867.1515197753906" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >todo: sifones de soda antiguos, gramófonos, cucharitas de plata de las </text><text xml:space="preserve" x="331.02908477783205" y="142.1" width="272.14183044433594" textLength="272.14183044433594" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >bisabuelas de alguien.</text></g></g></g><g data-widget-id="3458764688611877637"><g width="952px" height="208px"  transform="translate(837.14, 2271.63) scale(1) rotate(0, 476, 104)"><svg
+	width="952"
+	height="208"
+	shape-border-width="shape-background"
+	style="width:952px; height: 208px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="742777526275">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="208"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="208"
+			rx="0"
+			ry="0"
+			clip-path="url(#742777526275)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="208px"  transform="translate(837.14, 2271.63) rotate(0, 476, 104)"><g transform="translate(10.4, 10.4)"><text xml:space="preserve" x="307.87108001708987" y="29.599999999999994" width="315.4578399658203" textLength="315.4578399658203" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >FONDO: los dos en el café</text><text xml:space="preserve" x="27.968255615234398" y="101.6" width="882.0234832763672" textLength="882.0234832763672" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >Charlamos hasta que cierran. Él me cuenta de la ciudad, yo le cuento de </text><text xml:space="preserve" x="1.1882492065429915" y="137.6" width="935.58349609375" textLength="935.58349609375" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >dónde vengo. Me escucha con tanta atención que termino contando más de </text><text xml:space="preserve" x="368.60705718994143" y="173.6" width="193.9858856201172" textLength="193.9858856201172" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >lo que pensaba.</text></g></g></g><g data-widget-id="3458764688611877638"><g width="952px" height="111px"  transform="translate(837.14, 2050.63) scale(1) rotate(0, 476, 55.5)"><svg
+	width="952"
+	height="111"
+	shape-border-width="shape-background"
+	style="width:952px; height: 111px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="605626115268">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+			clip-path="url(#605626115268)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="111px"  transform="translate(837.14, 2050.63) rotate(0, 476, 55.5)"><g transform="translate(5.550000000000001, 5.550000000000001)"><text xml:space="preserve" x="31.1412384033203" y="39.95" width="90.81796264648438" textLength="90.81796264648438" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" font-weight="bold">MATEO</text><text xml:space="preserve" x="121.95920104980468" y="39.95" width="794.5595550537109" textLength="794.5595550537109" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" > — Mi familia vive acá desde siempre. Mis bisabuelos llegaron de </text><text xml:space="preserve" x="236.580126953125" y="75.95" width="467.73974609375" textLength="467.73974609375" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >Italia en barco. ¿Y vos? ¿De dónde sos?</text></g></g></g><g data-widget-id="3458764688611877639"><g width="952px" height="151px"  transform="translate(837.14, 2892.63) scale(1) rotate(0, 476, 75.5)"><svg
+	width="952"
+	height="151"
+	shape-border-width="shape-background"
+	style="width:952px; height: 151px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1460129465557">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="151"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="151"
+			rx="0"
+			ry="0"
+			clip-path="url(#1460129465557)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="151px"  transform="translate(837.14, 2892.63) rotate(0, 476, 75.5)"><g transform="translate(7.550000000000001, 7.550000000000001)"><text xml:space="preserve" x="11.08428497314452" y="57.95" width="921.4914245605469" textLength="921.4914245605469" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >Al atardecer llegamos al río. No es azul ni gris, sino color té con leche, y tan </text><text xml:space="preserve" x="147.1421920776367" y="93.95" width="642.6156158447266" textLength="642.6156158447266" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >ancho que parece el mar; no puedo dejar de mirarlo.</text></g></g></g><g data-widget-id="3458764688611877640"><g width="952px" height="111px"  transform="translate(837.14, 3153.63) scale(1) rotate(0, 476, 55.5)"><svg
+	width="952"
+	height="111"
+	shape-border-width="shape-background"
+	style="width:952px; height: 111px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1553659390896">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+			clip-path="url(#1553659390896)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="111px"  transform="translate(837.14, 3153.63) rotate(0, 476, 55.5)"><g transform="translate(5.550000000000001, 5.550000000000001)"><text xml:space="preserve" x="27.020213317871082" y="39.95" width="90.81796264648438" textLength="90.81796264648438" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" font-weight="bold">MATEO</text><text xml:space="preserve" x="117.83817596435546" y="39.95" width="802.8016052246094" textLength="802.8016052246094" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" > — El domingo que viene hacemos asado en casa. Toda la familia. </text><text xml:space="preserve" x="380.9060546875" y="75.95" width="179.087890625" textLength="179.087890625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >¿Querés venir?</text></g></g></g><g data-widget-id="3458764688611877641"><g width="952px" height="111px"  transform="translate(837.14, 3375.63) scale(1) rotate(0, 476, 55.5)"><svg
+	width="952"
+	height="111"
+	shape-border-width="shape-background"
+	style="width:952px; height: 111px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1121969014894">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+			clip-path="url(#1121969014894)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="111px"  transform="translate(837.14, 3375.63) rotate(0, 476, 55.5)"><g transform="translate(5.550000000000001, 5.550000000000001)"><text xml:space="preserve" x="323.3290588378906" y="57.95" width="43.08197021484375" textLength="43.08197021484375" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" font-weight="bold">YO </text><text xml:space="preserve" x="366.41102905273436" y="57.95" width="251.159912109375" textLength="251.159912109375" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >— ¿Toda… la familia?</text></g></g></g><g data-widget-id="3458764688611877642"><g width="952px" height="111px"  transform="translate(837.14, 3596.63) scale(1) rotate(0, 476, 55.5)"><svg
+	width="952"
+	height="111"
+	shape-border-width="shape-background"
+	style="width:952px; height: 111px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1260750077099">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+			clip-path="url(#1260750077099)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="111px"  transform="translate(837.14, 3596.63) rotate(0, 476, 55.5)"><g transform="translate(5.550000000000001, 5.550000000000001)"><text xml:space="preserve" x="37.6152374267578" y="39.95" width="90.81796264648438" textLength="90.81796264648438" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" font-weight="bold">MATEO</text><text xml:space="preserve" x="128.43320007324218" y="39.95" width="781.6115570068359" textLength="781.6115570068359" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" > — Toda. Mi nonna, mi viejo, mis tías… No te asustes. Bueno, un </text><text xml:space="preserve" x="406.20404357910155" y="75.95" width="128.49191284179688" textLength="128.49191284179688" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >poquito sí.</text></g></g></g><g data-widget-id="3458764688611877643"><g width="952px" height="111px"  transform="translate(837.14, 3817.63) scale(1) rotate(0, 476, 55.5)"><svg
+	width="952"
+	height="111"
+	shape-border-width="shape-background"
+	style="width:952px; height: 111px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="29202045357">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+			clip-path="url(#29202045357)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="111px"  transform="translate(837.14, 3817.63) rotate(0, 476, 55.5)"><g transform="translate(5.550000000000001, 5.550000000000001)"><text xml:space="preserve" x="160.03619689941405" y="57.95" width="620.8276062011719" textLength="620.8276062011719" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >Digo que «sí» antes de tener tiempo de asustarme.</text></g></g></g><g data-widget-id="3458764688611877644"><g width="952px" height="111px"  transform="translate(837.14, 4039.63) scale(1) rotate(0, 476, 55.5)"><svg
+	width="952"
+	height="111"
+	shape-border-width="shape-background"
+	style="width:952px; height: 111px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1558368859335">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="111"
+			rx="0"
+			ry="0"
+			clip-path="url(#1558368859335)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="111px"  transform="translate(837.14, 4039.63) rotate(0, 476, 55.5)"><g transform="translate(5.550000000000001, 5.550000000000001)"><text xml:space="preserve" x="161.89515991210936" y="57.95" width="617.1096801757812" textLength="617.1096801757812" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >¿Qué me espera ahora en esta ciudad maravillosa?</text></g></g></g><g data-widget-id="3458764688611877645"><g width="40.25px" height="20px"  transform="translate(1338.06, 2199.49) scale(1.7142857142857142) rotate(0, 20.125, 10)"><svg
+	width="40.25"
+	height="20"
+	shape-border-width="shape-background"
+	style="width:40.25px; height: 20px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1638048605676">
+		<rect
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#ffffff"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+			clip-path="url(#1638048605676)"
+		></rect>
+	</g>
+</svg>
+</g><g width="69px" height="34.285714285714285px"  transform="translate(1338.06, 2199.49) rotate(0, 34.5, 17.142857142857142)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="24" width="66.83990478515625" textLength="66.83990478515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="24" 
+				fill="#1a1a1a" direction="ltr" >[CLIC]</text></g></g></g><g data-widget-id="3458764688611877646"><g width="40.25px" height="20px"  transform="translate(1361.6, 2548.75) scale(1.7142857142857142) rotate(0, 20.125, 10)"><svg
+	width="40.25"
+	height="20"
+	shape-border-width="shape-background"
+	style="width:40.25px; height: 20px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="21545658784">
+		<rect
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#ffffff"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+			clip-path="url(#21545658784)"
+		></rect>
+	</g>
+</svg>
+</g><g width="69px" height="34.285714285714285px"  transform="translate(1361.6, 2548.75) rotate(0, 34.5, 17.142857142857142)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="24" width="66.83990478515625" textLength="66.83990478515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="24" 
+				fill="#1a1a1a" direction="ltr" >[CLIC]</text></g></g></g><g data-widget-id="3458764688611877647"><g width="40.25px" height="20px"  transform="translate(1348.02, 2818.03) scale(1.7142857142857142) rotate(0, 20.125, 10)"><svg
+	width="40.25"
+	height="20"
+	shape-border-width="shape-background"
+	style="width:40.25px; height: 20px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="316430968616">
+		<rect
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#ffffff"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+			clip-path="url(#316430968616)"
+		></rect>
+	</g>
+</svg>
+</g><g width="69px" height="34.285714285714285px"  transform="translate(1348.02, 2818.03) rotate(0, 34.5, 17.142857142857142)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="24" width="66.83990478515625" textLength="66.83990478515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="24" 
+				fill="#1a1a1a" direction="ltr" >[CLIC]</text></g></g></g><g data-widget-id="3458764688611877649"><g width="40.25px" height="20px"  transform="translate(1350.31, 3102.36) scale(1.7142857142857142) rotate(0, 20.125, 10)"><svg
+	width="40.25"
+	height="20"
+	shape-border-width="shape-background"
+	style="width:40.25px; height: 20px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="198586581566">
+		<rect
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#ffffff"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+			clip-path="url(#198586581566)"
+		></rect>
+	</g>
+</svg>
+</g><g width="69px" height="34.285714285714285px"  transform="translate(1350.31, 3102.36) rotate(0, 34.5, 17.142857142857142)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="24" width="66.83990478515625" textLength="66.83990478515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="24" 
+				fill="#1a1a1a" direction="ltr" >[CLIC]</text></g></g></g><g data-widget-id="3458764688611877650"><g width="40.25px" height="20px"  transform="translate(1354.11, 3297.34) scale(1.7142857142857142) rotate(0, 20.125, 10)"><svg
+	width="40.25"
+	height="20"
+	shape-border-width="shape-background"
+	style="width:40.25px; height: 20px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="964386244010">
+		<rect
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#ffffff"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+			clip-path="url(#964386244010)"
+		></rect>
+	</g>
+</svg>
+</g><g width="69px" height="34.285714285714285px"  transform="translate(1354.11, 3297.34) rotate(0, 34.5, 17.142857142857142)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="24" width="66.83990478515625" textLength="66.83990478515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="24" 
+				fill="#1a1a1a" direction="ltr" >[CLIC]</text></g></g></g><g data-widget-id="3458764688611877651"><g width="40.25px" height="20px"  transform="translate(1357, 3528.59) scale(1.7142857142857142) rotate(0, 20.125, 10)"><svg
+	width="40.25"
+	height="20"
+	shape-border-width="shape-background"
+	style="width:40.25px; height: 20px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1654996800210">
+		<rect
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#ffffff"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+			clip-path="url(#1654996800210)"
+		></rect>
+	</g>
+</svg>
+</g><g width="69px" height="34.285714285714285px"  transform="translate(1357, 3528.59) rotate(0, 34.5, 17.142857142857142)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="24" width="66.83990478515625" textLength="66.83990478515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="24" 
+				fill="#1a1a1a" direction="ltr" >[CLIC]</text></g></g></g><g data-widget-id="3458764688611877652"><g width="40.25px" height="20px"  transform="translate(1349.72, 3752.01) scale(1.7142857142857142) rotate(0, 20.125, 10)"><svg
+	width="40.25"
+	height="20"
+	shape-border-width="shape-background"
+	style="width:40.25px; height: 20px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="831725495077">
+		<rect
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#ffffff"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+			clip-path="url(#831725495077)"
+		></rect>
+	</g>
+</svg>
+</g><g width="69px" height="34.285714285714285px"  transform="translate(1349.72, 3752.01) rotate(0, 34.5, 17.142857142857142)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="24" width="66.83990478515625" textLength="66.83990478515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="24" 
+				fill="#1a1a1a" direction="ltr" >[CLIC]</text></g></g></g><g data-widget-id="3458764688611877653"><g width="40.25px" height="20px"  transform="translate(1367.56, 3957.86) scale(1.7142857142857142) rotate(0, 20.125, 10)"><svg
+	width="40.25"
+	height="20"
+	shape-border-width="shape-background"
+	style="width:40.25px; height: 20px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1761161994498">
+		<rect
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#ffffff"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+			clip-path="url(#1761161994498)"
+		></rect>
+	</g>
+</svg>
+</g><g width="69px" height="34.285714285714285px"  transform="translate(1367.56, 3957.86) rotate(0, 34.5, 17.142857142857142)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="24" width="66.83990478515625" textLength="66.83990478515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="24" 
+				fill="#1a1a1a" direction="ltr" >[CLIC]</text></g></g></g><g data-widget-id="3458764688611877655"><g width="40.25px" height="20px"  transform="translate(1347.22, 302.6) scale(1.7142857142857142) rotate(0, 20.125, 10)"><svg
+	width="40.25"
+	height="20"
+	shape-border-width="shape-background"
+	style="width:40.25px; height: 20px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="247255618068">
+		<rect
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#ffffff"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+			clip-path="url(#247255618068)"
+		></rect>
+	</g>
+</svg>
+</g><g width="69px" height="34.285714285714285px"  transform="translate(1347.22, 302.6) rotate(0, 34.5, 17.142857142857142)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="24" width="66.83990478515625" textLength="66.83990478515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="24" 
+				fill="#1a1a1a" direction="ltr" >[CLIC]</text></g></g></g><g data-widget-id="3458764688611877656"><g width="40.25px" height="20px"  transform="translate(1333.64, 523.35) scale(1.7142857142857142) rotate(0, 20.125, 10)"><svg
+	width="40.25"
+	height="20"
+	shape-border-width="shape-background"
+	style="width:40.25px; height: 20px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="298419916957">
+		<rect
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#ffffff"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+			clip-path="url(#298419916957)"
+		></rect>
+	</g>
+</svg>
+</g><g width="69px" height="34.285714285714285px"  transform="translate(1333.64, 523.35) rotate(0, 34.5, 17.142857142857142)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="24" width="66.83990478515625" textLength="66.83990478515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="24" 
+				fill="#1a1a1a" direction="ltr" >[CLIC]</text></g></g></g><g data-widget-id="3458764688611877657"><g width="40.25px" height="20px"  transform="translate(1338.78, 875.9) scale(1.7142857142857142) rotate(0, 20.125, 10)"><svg
+	width="40.25"
+	height="20"
+	shape-border-width="shape-background"
+	style="width:40.25px; height: 20px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="738637315212">
+		<rect
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#ffffff"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+			clip-path="url(#738637315212)"
+		></rect>
+	</g>
+</svg>
+</g><g width="69px" height="34.285714285714285px"  transform="translate(1338.78, 875.9) rotate(0, 34.5, 17.142857142857142)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="24" width="66.83990478515625" textLength="66.83990478515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="24" 
+				fill="#1a1a1a" direction="ltr" >[CLIC]</text></g></g></g><g data-widget-id="3458764688611877658"><g width="40.25px" height="20px"  transform="translate(1349.97, 1981.28) scale(1.7142857142857142) rotate(0, 20.125, 10)"><svg
+	width="40.25"
+	height="20"
+	shape-border-width="shape-background"
+	style="width:40.25px; height: 20px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1191241317101">
+		<rect
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#ffffff"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="40.25"
+			height="20"
+			rx="0"
+			ry="0"
+			clip-path="url(#1191241317101)"
+		></rect>
+	</g>
+</svg>
+</g><g width="69px" height="34.285714285714285px"  transform="translate(1349.97, 1981.28) rotate(0, 34.5, 17.142857142857142)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="24" width="66.83990478515625" textLength="66.83990478515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="24" 
+				fill="#1a1a1a" direction="ltr" >[CLIC]</text></g></g></g><g data-widget-id="3458764688611877750"><g width="1407.86px" height="744.5px"  transform="translate(1789.22, -536.38) scale(1) rotate(0, 703.93, 372.25)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 1352 0 L 1399.8618286001565 0 Q 1407.8618286001565 0 1407.8618286001565 8 L 1407.8618286001565 736.5 Q 1407.8618286001565 744.5 1399.8618286001565 744.5 L 10.181818181818182 744.5" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 744.5)  rotate(180) "  /> </g></g><g data-widget-id="3458764688611877751"><g width="1407.56px" height="598px"  transform="translate(1789.22, -389.88) scale(1) rotate(0, 703.78, 299)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 1352 0 L 1399.5595474866482 0 Q 1407.5595474866482 0 1407.5595474866482 8 L 1407.5595474866482 590 Q 1407.5595474866482 598 1399.5595474866482 598 L 10.181818181818182 598" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 598)  rotate(180) "  /> </g></g><g data-widget-id="3458764688611877752"><g width="1406.69px" height="451px"  transform="translate(1789.22, -242.88) scale(1) rotate(0, 703.345, 225.5)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 1352 0 L 1398.6862909365132 0 Q 1406.6862909365132 0 1406.6862909365132 8 L 1406.6862909365132 443 Q 1406.6862909365132 451 1398.6862909365132 451 L 10.181818181818182 451" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 451)  rotate(180) "  /> </g></g><g data-widget-id="3458764688611877753"><g width="0px" height="111px"  transform="translate(1313.22, 263.62) scale(1) rotate(0, 0, 55.5)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 L 0 100.81818181818181" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 111)  rotate(90) "  /> </g></g><g data-widget-id="3458764688611877755"><g width="0px" height="110px"  transform="translate(1313.22, 485.62) scale(1) rotate(0, 0, 55)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 L 0 99.81818181818181" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 110)  rotate(90) "  /> </g></g><g data-widget-id="3458764688611877757"><g width="0px" height="110px"  transform="translate(1313.22, 834.62) scale(1) rotate(0, 0, 55)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 L 0 99.81818181818181" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 110)  rotate(90) "  /> </g></g><g data-widget-id="3458764688611877761"><g width="0px" height="110px"  transform="translate(1313.14, 2161.63) scale(1) rotate(0, 0, 55)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 L 0 99.81818181818181" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 110)  rotate(90) "  /> </g></g><g data-widget-id="3458764688611877763"><g width="0px" height="125px"  transform="translate(1313.14, 2479.63) scale(1) rotate(0, 0, 62.5)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 L 0 114.81818181818181" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 125)  rotate(90) "  /> </g></g><g data-widget-id="3458764688611877766"><g width="0px" height="110px"  transform="translate(1313.14, 3043.63) scale(1) rotate(0, 0, 55)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 L 0 99.81818181818181" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 110)  rotate(90) "  /> </g></g><g data-widget-id="3458764688611877767"><g width="0px" height="111px"  transform="translate(1313.14, 3264.63) scale(1) rotate(0, 0, 55.5)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 L 0 100.81818181818181" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 111)  rotate(90) "  /> </g></g><g data-widget-id="3458764688611877768"><g width="0px" height="110px"  transform="translate(1313.14, 3486.63) scale(1) rotate(0, 0, 55)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 L 0 99.81818181818181" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 110)  rotate(90) "  /> </g></g><g data-widget-id="3458764688611877769"><g width="0px" height="110px"  transform="translate(1313.14, 3707.63) scale(1) rotate(0, 0, 55)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 L 0 99.81818181818181" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 110)  rotate(90) "  /> </g></g><g data-widget-id="3458764688611877770"><g width="0px" height="111px"  transform="translate(1313.14, 3928.63) scale(1) rotate(0, 0, 55.5)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 L 0 100.81818181818181" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 111)  rotate(90) "  /> </g></g><g data-widget-id="3458764688897717208"><g width="0px" height="110px"  transform="translate(1313.14, 2782.63) scale(1) rotate(0, 0, 55)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 L 0 99.81818181818181" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 110)  rotate(90) "  /> </g></g><g data-widget-id="3458764688897902386"><g width="952px" height="111px"  transform="translate(837.22, 1387.29) scale(1) rotate(0, 476, 55.5)"><svg
+	width="952"
+	height="111.00000000000071"
+	shape-border-width="shape-background"
+	style="width:952px; height: 111.00000000000071px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1057108765292">
+		<rect
+			x="0"
+			y="0"
+			width="952"
+			height="111.00000000000071"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="952"
+			height="111.00000000000071"
+			rx="0"
+			ry="0"
+			clip-path="url(#1057108765292)"
+		></rect>
+	</g>
+</svg>
+</g><g width="952px" height="111px"  transform="translate(837.22, 1387.29) rotate(0, 476, 55.5)"><g transform="translate(5.550000000000036, 5.550000000000036)"><text xml:space="preserve" x="31.23224182128905" y="39.950000000000315" width="885.1955108642578" textLength="885.1955108642578" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >La cocinera le dice algo, señalándome con la cabeza. Él me mira y sonríe </text><text xml:space="preserve" x="288.11207885742186" y="75.95000000000032" width="364.67584228515625" textLength="364.67584228515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" >como si ya nos conociéramos.</text></g></g></g><g data-widget-id="3458764688897902546"><g width="951.92px" height="111.34px"  transform="translate(837.3, 944.62) scale(1) rotate(0, 475.96, 55.67)"><svg
+	width="951.9199462933344"
+	height="111.33745007448393"
+	shape-border-width="shape-background"
+	style="width:951.9199462933344px; height: 111.33745007448393px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="359021588033">
+		<rect
+			x="0"
+			y="0"
+			width="951.9199462933344"
+			height="111.33745007448393"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="951.9199462933344"
+			height="111.33745007448393"
+			rx="0"
+			ry="0"
+			clip-path="url(#359021588033)"
+		></rect>
+	</g>
+</svg>
+</g><g width="951.92px" height="111.34px"  transform="translate(837.3, 944.62) rotate(0, 475.96, 55.67)"><g transform="translate(5.566872503724197, 5.566872503724197)"><text xml:space="preserve" x="190.59426488854848" y="58.101852533517764" width="134.28994750976562" textLength="134.28994750976562" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" font-weight="bold">COCINERA</text><text xml:space="preserve" x="324.8842123983141" y="58.101852533517764" width="425.30772399902344" textLength="425.30772399902344" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" > — ¡Mirá quién llegó! ¡Mateo, nene!</text></g></g></g><g data-widget-id="3458764688897902665"><g width="951.92px" height="111.34px"  transform="translate(837.3, 1165.95) scale(1) rotate(0, 475.96, 55.67)"><svg
+	width="951.9199462933344"
+	height="111.33745007448393"
+	shape-border-width="shape-background"
+	style="width:951.9199462933344px; height: 111.33745007448393px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="339421769902">
+		<rect
+			x="0"
+			y="0"
+			width="951.9199462933344"
+			height="111.33745007448393"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="951.9199462933344"
+			height="111.33745007448393"
+			rx="0"
+			ry="0"
+			clip-path="url(#339421769902)"
+		></rect>
+	</g>
+</svg>
+</g><g width="951.92px" height="111.34px"  transform="translate(837.3, 1165.95) rotate(0, 475.96, 55.67)"><g transform="translate(5.566872503724197, 5.566872503724197)"><text xml:space="preserve" x="60.12636175134145" y="58.101852533517764" width="90.47996520996094" textLength="90.47996520996094" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" font-weight="bold">МАТЕО</text><text xml:space="preserve" x="150.6063269613024" y="58.101852533517764" width="736.8135070800781" textLength="736.8135070800781" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" > — Hola, reina. Te traje las facturas  de mi tía, que te gustan. </text></g></g></g><g data-widget-id="3458764688897967291"><g width="951.92px" height="111.34px"  transform="translate(837.22, 1608.29) scale(1) rotate(0, 475.96, 55.67)"><svg
+	width="951.9199462933344"
+	height="111.33745007448393"
+	shape-border-width="shape-background"
+	style="width:951.9199462933344px; height: 111.33745007448393px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1004363158855">
+		<rect
+			x="0"
+			y="0"
+			width="951.9199462933344"
+			height="111.33745007448393"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#dedaff"
+			fill-opacity="0.1"
+			x="0"
+			y="0"
+			width="951.9199462933344"
+			height="111.33745007448393"
+			rx="0"
+			ry="0"
+			clip-path="url(#1004363158855)"
+		></rect>
+	</g>
+</svg>
+</g><g width="951.92px" height="111.34px"  transform="translate(837.22, 1608.29) rotate(0, 475.96, 55.67)"><g transform="translate(5.566872503724197, 5.566872503724197)"><text xml:space="preserve" x="66.69132604577504" y="58.101852533517764" width="90.47996520996094" textLength="90.47996520996094" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" font-weight="bold">МАТЕО</text><text xml:space="preserve" x="157.17129125573598" y="58.101852533517764" width="716.923583984375" textLength="716.923583984375" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="26" 
+				fill="#1a1a1a" direction="ltr" > — ¿Así que sos nueva en el barrio? Bienvenida. Soy Mateo.</text></g></g></g><g data-widget-id="3458764688897967642"><g width="0px" height="110px"  transform="translate(1313.26, 1055.95) scale(1) rotate(0, 0, 55)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 C 0 39.92727272727279 0 59.89090909090919 0 99.81818181818198" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 110)  rotate(90) "  /> </g></g><g data-widget-id="3458764688897967662"><g width="0.04px" height="110px"  transform="translate(1313.22, 1277.29) scale(1) rotate(0, 0.02, 55)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0.04002685333284717 0 C 0.04002685333284717 39.9272759374071 0 59.89090588077488 0 99.81818181818198" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(2.2737367544323206e-13, 110)  rotate(90) "  /> </g></g><g data-widget-id="3458764688897967681"><g width="0.04px" height="110px"  transform="translate(1313.18, 1498.29) scale(1) rotate(0, 0.02, 55)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0.04002685333284717 0 C 0.04002685333284717 39.9272759374071 0 59.89090588077488 0 99.81818181818198" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 110)  rotate(90) "  /> </g></g><g data-widget-id="3458764688897967696"><g width="0.04px" height="110px"  transform="translate(1313.14, 1719.63) scale(1) rotate(0, 0.02, 55)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0.040026853332619794 0 C 0.040026853332619794 39.9272759374071 0 59.89090588077488 0 99.81818181818198" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 110)  rotate(90) "  /> </g></g><g data-widget-id="3458764688898034867"><g width="0px" height="110px"  transform="translate(1313.14, 1940.63) scale(1) rotate(0, 0, 55)"><path stroke-linecap="butt" 
+            stroke="#333333" stroke-width="2" fill="transparent"
+            d="M 0 0 C 0 39.92727272727279 0 59.89090909090919 0 99.81818181818198" /> <use xlink:href="#LineHeadArrow2" fill="#333333"
+             transform="translate(0, 110)  rotate(90) "  /> </g></g></svg>

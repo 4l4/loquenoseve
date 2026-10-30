@@ -1,0 +1,16 @@
+:: Inicio [menu]
+<<bg "background_menu" "cut">>
+<h1>Lo que no se ve</h1>
+<p>Hoy en el mundo más de 300 millones de personas viven en un país distinto al que nacieron. Es más o menos una de cada treinta personas en la Tierra.</p>
+<p>Detrás de cada una de esas cifras hay una valija y un pasaje de ida. Y también lo que no entró en el equipaje: las reglas de la abuela en la mesa, una fiesta que acá no figura en el calendario, una cábala de la que te reís pero que igual cumplís.</p>
+<p>Buenos Aires lo sabe mejor que muchas ciudades. Hace cien años, casi la mitad de sus habitantes había llegado del otro lado del océano. Italianos, españoles, judíos, armenios, coreanos, sirios: cada uno trajo lo suyo. La ciudad lo fundió en tango, asado y un castellano muy particular, y a los recién llegados los convirtió en porteños.</p>
+<p>Ahora te toca a vos. Traés tres cosas de casa: una regla, una fecha y una cábala. La ciudad va a poner a prueba cada una.</p>
+<p><em>¿Conservar lo tuyo o volverte una más? ¿Se puede amar un hogar nuevo sin perder el viejo?</em></p>
+<p>Acá no hay una respuesta correcta. Por cada paso hacia la ciudad vas a ganar puntos porteños, pero cada punto tiene su precio. Toda elección te da algo y te quita algo.</p>
+<p>Recorré tu camino. Descubrí en quién te convertís en una ciudad que no se repite.</p>
+<<choices>>
+	<a class="vn-primary" data-passage="Aeropuerto">Empezar el juego</a>
+	<a class="vn-ext" target="_blank" rel="noopener" @href="setup.links.mapa">Mapa</a>
+	<a class="vn-ext" target="_blank" rel="noopener" @href="setup.links.recetas">Recetas</a>
+	<a class="vn-ext" target="_blank" rel="noopener" @href="setup.links.pelicula">Película</a>
+<</choices>>

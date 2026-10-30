@@ -1,0 +1,77 @@
+:: Cafe
+<<bg "background_17">>
+<<beat>>El café es chiquito y cálido. Adentro huele a cebolla, a carne guisada y a canela. En las paredes hay fotos viejas, y en un pizarrón está escrito el menú con tiza; no entiendo la mitad de las palabras.<</beat>>
+<<beat>>Me recibe la dueña del café en persona.<</beat>>
+<<beat>><<char "cocinera" "72%">><<say "cocinera">>— ¡Pasá, pasá, querida! Sentate donde quieras. ¿Es tu primera vez acá?<</say>><</beat>>
+<<beat>><<char "yo" "left">><<say "yo">>— Primera vez en todo. En el barrio, en la ciudad…<</say>><</beat>>
+<<beat>><<say "cocinera">>— ¡Ay, entonces te tengo que dar de comer como corresponde!<</say>><</beat>>
+<<beat>>No me pregunta qué quiero. A los cinco minutos tengo delante un plato de algo caliente y aromático, pan y una copa de vino tinto que tampoco pedí.<</beat>>
+<<beat>><<say "cocinera">>— ¿Y vos de dónde sos?<</say>><</beat>>
+<<nextscene "De donde sos">>
+
+
+:: De donde sos
+<<bg "background_17">>
+<<beat>>«¿De dónde sos?» es la pregunta más simple y la más difícil. No tengo una respuesta corta. Por eso contesto algo amable, y después, mientras como y miro por la ventana, me respondo a mí misma.<</beat>>
+<<beat>><<bg "background_18-face01">>En pocas palabras: soy lo que mi familia me pasó, como se pasa el mate en la ronda. Algunas reglas. Una fecha importante. Y una cábala de la que me río, pero que igual cumplo.<</beat>>
+<<nextscene "Regla">>
+
+
+:: Regla
+<<bg "background_19-face01">>
+<<beat>>En mi familia siempre…<<choices>>
+	[[…el primer bocado es para el mayor. Y siempre servimos con las dos manos, para que la persona vea que no solo le das comida, sino también respeto.|Fecha][$regla to "mayor"]]
+	[[…cuando te convidan, decís que no tres veces. Por cortesía. El anfitrión insiste, vos te negás, es como un baile, y recién a la tercera podés decir “sí”. Aceptar de una es como confesar que viniste a comer.|Fecha][$regla to "tres_veces"]]
+	[[…se come solo con la mano derecha. La izquierda es “impura”, es para otras cosas. Desde chica, mi mamá me daba un chirlo en la mano izquierda si la estiraba hacia el pan.|Fecha][$regla to "mano_derecha"]]
+<</choices>><</beat>>
+
+
+:: Fecha
+<<bg "background_19-face01">>
+<<beat>>Las reglas son lo que llevo conmigo todos los días. Pero hay días que importan más que otros. Para nosotros, el día importante es…<<choices>>
+	[[…cada viernes. Con la puesta del sol empieza nuestro día de descanso: se encienden las velas, se dejan los teléfonos, nadie tiene apuro. Un día entero en el que el mundo puede esperar.|Cabala][$fecha to "viernes"]]
+	[[…el kimjang. Cada otoño toda la familia se juntaba para preparar el kimchi del invierno: montañas de repollo, manos rojas de ají, tías discutiendo cuánta sal poner. Y no se trata de la comida, sino de estar juntos.|Cabala][$fecha to "kimjang"]]
+	[[…el 11 de septiembre, Enkutatash, nuestro Año Nuevo. Flores amarillas, canciones, olor a café que se tuesta ahí mismo, en la casa. Ese día siempre nos llamamos, estemos donde estemos.|Cabala][$fecha to "enkutatash"]]
+<</choices>><</beat>>
+
+
+:: Cabala
+<<bg "background_19-face01">>
+<<beat>>Y además tenemos una cábala. Ya sé que es una tontería. Pero andá a explicárselo a mi abuela.<<choices>>
+	[[«…si te elogian a vos o a alguien cerca, hay que escupir tres veces por encima del hombro. Ptu, ptu, ptu. Para que no te echen mal de ojo».|Equipaje][$cabala to "escupir"]]
+	[[«…en la puerta tienen que colgar un limón y unos ajíes en un hilo. Para que lo malo se quede del otro lado».|Equipaje][$cabala to "limon"]]
+	[[«…nunca te cortes las uñas de noche. Después del atardecer, las tijeras llaman a la desgracia».|Equipaje][$cabala to "unas"]]
+<</choices>><</beat>>
+
+
+:: Equipaje
+<<bg "background_19-face01">>
+<<beat>>Ese es el equipaje que llevo conmigo.<</beat>>
+<<beat>><<bg "background_17">><span class="vn-sfx">*la campanita de la puerta*</span><</beat>>
+<<beat>>Entra al café un chico joven. Pelo oscuro y rizado, campera al hombro, una bolsa de la panadería en la mano.<</beat>>
+<<beat>><<char "cocinera" "72%">><<say "cocinera">>— ¡Mirá quién llegó! ¡Mateo, nene!<</say>><</beat>>
+<<beat>><<char "mateo" "left">><<say "mateo">>— Hola, reina. Te traje las facturas de mi tía, que te gustan.<</say>><</beat>>
+<<beat>>La cocinera le dice algo, señalándome con la cabeza. Él me mira y sonríe como si ya nos conociéramos.<</beat>>
+<<beat>><<char "cocinera" "hide">><<say "mateo">>— ¿Así que sos nueva en el barrio? Bienvenida. Soy Mateo.<</say>><</beat>>
+<<beat>>Se sienta a mi mesa sin pedir permiso, y por alguna razón no me parece un atrevimiento. Me siento a gusto.<</beat>>
+<<beat>><<say "mateo">>— Mi familia vive acá desde siempre. Mis bisabuelos llegaron de Italia en barco. ¿Y vos? ¿De dónde sos?<</say>><</beat>>
+<<beat>><<nochar>><<bg "background_20">>Charlamos hasta que cierran. Él me cuenta de la ciudad, yo le cuento de dónde vengo. Me escucha con tanta atención que termino contando más de lo que pensaba.<</beat>>
+<<nextscene "San Telmo">>
+
+
+:: San Telmo
+<<bg "background_21" "slow">>
+<<beat>>Unos días después me muestra San Telmo. Acá las calles son de adoquines que todavía recuerdan a los caballos. En la feria del domingo se vende de todo: sifones de soda antiguos, gramófonos, cucharitas de plata de las bisabuelas de alguien.<</beat>>
+<<beat>><<bg "background_22">>Al atardecer llegamos al río. No es azul ni gris, sino color té con leche, y tan ancho que parece el mar; no puedo dejar de mirarlo.<</beat>>
+<<beat>><<char "mateo" "right">><<say "mateo">>— El domingo que viene hacemos asado en casa. Toda la familia. ¿Querés venir?<</say>><</beat>>
+<<beat>><<char "yo" "left">><<say "yo">>— ¿Toda… la familia?<</say>><</beat>>
+<<beat>><<say "mateo">>— Toda. Mi nonna, mi viejo, mis tías… No te asustes. Bueno, un poquito sí.<</say>><</beat>>
+<<beat>><<nochar>><<bg "background_23-face01">>Digo que «sí» antes de tener tiempo de asustarme.<</beat>>
+<<nextscene "Fin capitulo 1">>
+
+
+:: Fin capitulo 1 [menu]
+<<bg "background_23-face01">>
+<h1>¿Qué me espera ahora en esta ciudad maravillosa?</h1>
+<p>Fin del capítulo 1.</p>
+<<choices>><<link "Volver al inicio">><<run Engine.restart()>><</link>><</choices>>

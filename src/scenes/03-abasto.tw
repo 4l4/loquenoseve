@@ -1,0 +1,22 @@
+:: Departamento
+<<bg "background_12" "slow">>
+<<beat>>El taxista me dejó en el departamento que alquilé en el barrio del Abasto.<</beat>>
+<<beat>><<bg "background_13">>Desempaco solo lo indispensable. Lo demás puede esperar.<</beat>>
+<<beat>><<bg "background_14">>Me siento en el marco de la ventana con el celular y leo todo lo que encuentro sobre Buenos Aires, como si así pudiera conocerla más rápido.<</beat>>
+<<nextscene "Mapa">>
+
+
+:: Mapa
+<<bg "background_15">>
+<<beat>>Y ahí me aparece un mapa interactivo con los lugares de los migrantes.<</beat>>
+<<beat>>¿Continuar la historia?<<choices>>
+	<a class="link-external" target="_blank" rel="noopener" @href="setup.links.mapa">Abrir la aplicación externa con el mapa</a>
+	[[Continuar la historia|Hambre]]
+<</choices>><</beat>>
+
+
+:: Hambre
+<<bg "background_15">>
+<<beat>>Hay un pequeño café muy cerca de mi casa. Lo atiende una mujer peruana a la que llaman la cocinera del Abasto.<</beat>>
+<<beat>><<bg "background_16">>Tengo mucha hambre, debería ir ahora mismo.<</beat>>
+<<nextscene "Cafe">>

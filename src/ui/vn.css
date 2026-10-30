@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap");
+
+:root {
+	--vn-box-bg: rgba(14, 12, 22, 0.78);
+	--vn-box-border: rgba(255, 255, 255, 0.12);
+	--vn-text: #f4efe6;
+	--vn-muted: #b9b2a6;
+	--vn-accent: #f2c14e;
+	--vn-font-text: "Noto Serif", Georgia, serif;
+	--vn-font-ui: "Noto Sans", system-ui, sans-serif;
+}
+
+html, body {
+	background: #000;
+	color: var(--vn-text);
+	font-family: var(--vn-font-text);
+}
+
+/* ---------- Escenario ---------- */
+
+#vn-stage {
+	position: fixed;
+	inset: 0;
+	z-index: 0;
+	overflow: hidden;
+	user-select: none;
+}
+
+.vn-bg, #vn-fx {
+	position: absolute;
+	inset: 0;
+	background: center / cover no-repeat;
+}
+
+.vn-bg {
+	opacity: 0;
+	transition-property: opacity;
+	transition-timing-function: ease;
+}
+.vn-bg.vn-on { opacity: 1; }
+
+#vn-fx {
+	z-index: 3;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#vn-chars {
+	position: absolute;
+	inset: 0;
+	z-index: 2;
+	pointer-events: none;
+}
+
+#vn-chars img {
+	position: absolute;
+	bottom: 0;
+	height: 88vh;
+	max-width: 60vw;
+	object-fit: contain;
+	object-position: bottom;
+	opacity: 0;
+	transition: opacity 400ms ease, left 500ms ease, transform 500ms ease;
+}
+#vn-chars img.vn-on { opacity: 1; }
+#vn-chars img[data-pos="left"]   { left: 18%; transform: translateX(-50%); }
+#vn-chars img[data-pos="center"] { left: 50%; transform: translateX(-50%); }
+#vn-chars img[data-pos="right"]  { left: 82%; transform: translateX(-50%); }
+#vn-chars img[data-pos="custom"] { transform: translateX(-50%); }
+
+#vn-hud {
+	display: none;
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	z-index: 20;
+	padding: 0.35rem 0.9rem;
+	border-radius: 999px;
+	background: var(--vn-box-bg);
+	border: 1px solid var(--vn-box-border);
+	font: 600 0.85rem var(--vn-font-ui);
+	color: var(--vn-accent);
+}
+
+/* Panel de SugarCube (guardar/cargar/reiniciar): plegado y discreto */
+#ui-bar.stowed {
+	background: transparent;
+	border-color: transparent;
+}
+#ui-bar.stowed #ui-bar-toggle {
+	background: var(--vn-box-bg);
+	border-radius: 0 0 8px 0;
+}
+
+/* ---------- Caja de diálogo (pasajes normales) ---------- */
+
+#story,
+#ui-bar ~ #story,
+#ui-bar.stowed ~ #story {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	margin: 0;
+	padding: 0 1rem 1.5rem;
+	pointer-events: none;
+}
+
+/* Durante la transición SugarCube muestra dos pasajes a la vez: se superponen en la misma celda */
+#passages {
+	display: grid;
+	max-width: 62rem;
+	margin: 0 auto;
+	pointer-events: auto;
+}
+
+#passages > .passage {
+	grid-area: 1 / 1;
+	align-self: end;
+}
+
+/* Al entrar o salir de un menú, el pasaje saliente pierde su estilo: se oculta en el acto */
+.passage-out[data-tags~="menu"],
+body[data-tags~="menu"] .passage-out {
+	display: none;
+}
+
+.passage {
+	position: relative;
+	min-height: 10rem; /* altura fija para ~4 líneas: la caja no salta entre réplicas */
+	padding: 1.25rem 1.75rem 1.5rem;
+	background: var(--vn-box-bg);
+	border: 1px solid var(--vn-box-border);
+	border-radius: 14px;
+	backdrop-filter: blur(6px);
+	font-size: 1.15rem;
+	line-height: 1.55;
+	cursor: pointer;
+}
+
+/* Pasajes que solo cambian la imagen: sin caja */
+.passage:has(> .vn-beat:only-child:empty) {
+	background: transparent;
+	border-color: transparent;
+	backdrop-filter: none;
+}
+
+.vn-beat.vn-in { animation: vn-fade-in 350ms ease both; }
+
+@keyframes vn-fade-in {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+.vn-beat.vn-more::after {
+	content: "▸";
+	position: absolute;
+	right: 1.1rem;
+	bottom: 0.7rem;
+	color: var(--vn-accent);
+	animation: vn-blink 1.2s ease-in-out infinite;
+}
+
+@keyframes vn-blink { 50% { opacity: 0.25; } }
+
+.vn-say + .vn-say { margin-top: 0.75rem; }
+
+.vn-name {
+	font: 600 0.85rem var(--vn-font-ui);
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--vn-accent);
+	margin-bottom: 0.2rem;
+}
+
+.vn-say[data-speaker="yo"] .vn-text { font-style: italic; }
+
+.vn-sfx {
+	font: italic 0.95rem var(--vn-font-ui);
+	color: var(--vn-muted);
+}
+
+/* ---------- Opciones ---------- */
+
+.vn-choices {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	margin-top: 0.9rem;
+}
+
+.vn-choices a,
+.vn-choices button {
+	display: block;
+	padding: 0.7rem 1rem;
+	border: 1px solid var(--vn-box-border);
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.06);
+	color: var(--vn-text);
+	font: 1rem/1.4 var(--vn-font-text);
+	text-align: left;
+	text-decoration: none;
+	transition: background 150ms ease, border-color 150ms ease;
+}
+
+.vn-choices a:hover,
+.vn-choices a:focus-visible,
+.vn-choices button:hover {
+	background: rgba(242, 193, 78, 0.16);
+	border-color: var(--vn-accent);
+	color: var(--vn-text);
+}
+
+/* ---------- Pantallas de menú (tag: menu) ---------- */
+
+body[data-tags~="menu"] #story {
+	top: 0;
+	display: flex;
+	padding: 1.5rem 1rem;
+	overflow-y: auto;
+}
+
+body[data-tags~="menu"] #passages { width: 100%; max-width: 46rem; margin: auto; }
+
+body[data-tags~="menu"] .passage {
+	padding: 2rem 2.25rem;
+	cursor: default;
+	font-size: 1.05rem;
+}
+
+body[data-tags~="menu"] h1 {
+	margin: 0 0 1rem;
+	font: 600 2.4rem/1.15 var(--vn-font-text);
+	color: var(--vn-accent);
+}
+
+body[data-tags~="menu"] .vn-choices { flex-direction: row; flex-wrap: wrap; }
+body[data-tags~="menu"] .vn-choices a { text-align: center; flex: 1 1 10rem; font-family: var(--vn-font-ui); font-weight: 600; }
+body[data-tags~="menu"] .vn-choices a.vn-primary { flex-basis: 100%; background: var(--vn-accent); color: #1b1408; border-color: var(--vn-accent); }
+
+@media (max-width: 640px) {
+	.passage { font-size: 1rem; padding: 1rem 1.1rem 1.3rem; }
+	.passage { min-height: 11rem; }
+	#vn-chars img { height: 62vh; max-width: 80vw; }
+	body[data-tags~="menu"] h1 { font-size: 1.8rem; }
+}
