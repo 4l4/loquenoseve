@@ -273,11 +273,19 @@ body[data-tags~="menu"] .passage-out {
 
 /* ---------- Pantallas de menú (tag: menu) ---------- */
 
-body[data-tags~="menu"] #story {
+/* Pantallas de texto largo: se desplaza toda la pantalla, también deslizando fuera de la hoja (móvil).
+   Mismos selectores que la regla base de #story (con #ui-bar) para ganarle en especificidad. */
+body[data-tags~="menu"] #story,
+body[data-tags~="menu"] #ui-bar ~ #story,
+body[data-tags~="menu"] #ui-bar.stowed ~ #story {
 	top: 0;
 	display: flex;
 	padding: 1.5rem 1rem;
 	overflow-y: auto;
+	overscroll-behavior: contain;
+	-webkit-overflow-scrolling: touch;
+	touch-action: pan-y;
+	pointer-events: auto;
 }
 
 body[data-tags~="menu"] #vn-sheet { width: 100%; max-width: 46rem; margin: auto; }
