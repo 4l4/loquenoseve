@@ -12,9 +12,9 @@
 | `background_menu` | размытый терминал аэропорта | главный экран |
 | `background_01` | выход из терминала Aeroparque Jorge Newbery, такси за стеклом, закат | «Las puertas del aeropuerto se abren» |
 | `background_02` | героиня-силуэт с чемоданом у жёлто-чёрного такси | выход к такси |
-| `background_03` | салон такси, вид на дорогу, флаг и вымпел Boca на зеркале | диалог с таксистом |
-| `background_04` | вид из окна такси на шоссе | дорога |
-| `background_05-face01` | героиня (внешность 1) смотрит в окно такси | «Miro mi reflejo en el vidrio», APARIENCIA 1 |
+| `background_03` | салон такси, вид на дорогу у реки на закате; на зеркале флажок Аргентины и футболка с номером 10 | диалог с таксистом |
+| `background_04` | вид из окна такси на шоссе | «Miro mi reflejo en el vidrio…» |
+| `background_05-face01` | героиня (внешность 1) смотрит в окно такси | выбор внешности: APARIENCIA 1 |
 | `background_05-face02` | **заглушка** «Todavía no está. Elegí la apariencia 1.» | APARIENCIA 2 |
 | `background_05-face03` | **заглушка** то же | APARIENCIA 3 |
 | `background_06-01` | шоссе: фуры, контейнеры, билборд | «la ciudad se esconde detrás de la autopista» |

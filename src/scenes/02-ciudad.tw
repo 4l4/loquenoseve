@@ -1,8 +1,8 @@
 :: Nueve de Julio
 <<bg "background_08-01-1">>
 <<beat>><</beat>>
-<<beat>><<bg "background_08-01-2">>Es tan ancha que parece imposible cruzarla en un solo semáforo. Es la avenida más ancha del mundo, y la estoy viendo con mis propios ojos.<</beat>>
-<<beat>><<bg "background_08-01-3">>En el medio, como una aguja blanca que cose la ciudad al cielo, está el Obelisco. El sol lo ilumina tanto que hasta encandila un poco.<</beat>>
+<<beat>><<bg "background_08-01-2">>La 9 de Julio es tan ancha que resulta imposible cruzarla de un solo semáforo. Es la avenida más ancha del mundo, y la estoy viendo con mis propios ojos.<</beat>>
+<<beat>><<bg "background_08-01-3">>Justo en el medio, como una aguja blanca que cose la ciudad al cielo, se levanta el Obelisco. El sol llega a iluminarlo tanto que por momentos te deslumbra.<</beat>>
 <<nextscene "Escena impresionante">>
 
 
@@ -39,5 +39,5 @@
 
 :: Dormida
 <<bg "background_11-face01" "slow">>
-<<beat>>Apoyo la frente en el vidrio. La ciudad es ruidosa, cálida, un poco gastada, y no se parece a ningún lugar donde haya estado. Y me quedo dormida.<</beat>>
+<<beat>>Después de recorrer esta ciudad desbordante de historia y monumentos, el cansancio me empieza a pesar. Estoy agotada por el viaje y ansiosa por llegar, de una vez, a mi destino.<</beat>>
 <<nextscene "Departamento">>

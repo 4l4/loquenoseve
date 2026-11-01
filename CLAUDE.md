@@ -20,7 +20,7 @@ npm run deploy       # build + публикация dist/ в ветку gh-pages
 
 ```
 src/story/StoryData.tw   метаданные: IFID, формат, стартовый пасаж (не менять IFID)
-src/story/StoryInit.tw   глобальные переменные ($regla, $fecha, $cabala, $puntos, $apariencia) и setup.links
+src/story/StoryInit.tw   глобальные переменные ($regla, $fecha, $cabala, $puntos, $apariencia) и setup.ext
 src/story/characters.js  реестр персонажей: id → имя, спрайт, цвет имени
 src/ui/vn.js             движок VN-слоя (макросы ниже)
 src/ui/vn.css            оформление
@@ -85,9 +85,11 @@ Tweego собирает все `.tw`, `.js`, `.css` из `src/` рекурсив
 
 ## Источники сюжета
 
-- `docs/plot.md` — текст доски Miro. Порядок строк местами перемешан между колонками, поэтому сверяйтесь по смыслу и по `docs/assets.md`.
+- `docs/plot.md` — текст доски Miro, генерируется из `plot.svg` скриптом `python3 scripts/plot_extract.py plot.svg [out.json]`.
+  Правки текста на доске подсвечены жёлтым (`#fff6b6`) — в выводе скрипта они помечены `*`, в plot.md — `★`.
+  После обновления `plot.svg`: прогнать скрипт, перенести подсвеченные блоки в сцены, затем сверить неподсвеченные с игрой.
 - Доска Miro: https://miro.com/app/board/uXjVEX7-HPk=/ (MCP Miro). Если доступ есть, это первоисточник.
-- Внешние части проекта (MAPA, RECETAS, PELÍCULA) — URL в `setup.links` в `StoryInit.tw`, пока стоят заглушки `#`.
+- Внешние части проекта (MAPA, RECETAS, PELÍCULA) — ссылки `<a class="vn-ext" data-ext="mapa|recetas|pelicula">`; пока они только показывают баннер «En desarrollo» (vn.js), названия частей — `setup.ext` в `StoryInit.tw`.
 
 ## Сделано / дальше
 

@@ -6,9 +6,9 @@
 <<set $cabala to "">>   /* "escupir" | "limon" | "unas" */
 <<set $puntos to 0>>    /* puntos porteños */
 
-/* Enlaces a las otras partes del proyecto: reemplazar por las URLs reales */
-<<set setup.links to {
-  mapa:     "#",
-  recetas:  "#",
-  pelicula: "#"
+/* Otras partes del proyecto (enlaces <a class="vn-ext" data-ext="…">): por ahora muestran el cartel «En desarrollo» */
+<<set setup.ext to {
+  mapa:     "El mapa",
+  recetas:  "Las recetas",
+  pelicula: "La película"
 }>>

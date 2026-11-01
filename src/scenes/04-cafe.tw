@@ -50,7 +50,7 @@
 <<beat>><<bg "background_17">><span class="vn-sfx">*la campanita de la puerta*</span><</beat>>
 <<beat>>Entra al café un chico joven. Pelo oscuro y rizado, campera al hombro, una bolsa de la panadería en la mano.<</beat>>
 <<beat>><<char "cocinera" "72%">><<say "cocinera">>— ¡Mirá quién llegó! ¡Mateo, nene!<</say>><</beat>>
-<<beat>><<char "mateo" "left">><<say "mateo">>— Hola, reina. Te traje las facturas de mi tía, que te gustan.<</say>><</beat>>
+<<beat>><<char "mateo" "left">><<say "mateo">>— Hola, reina. Te traje las facturas que te encantan, esas que prepara mi tía.<</say>><</beat>>
 <<beat>>La cocinera le dice algo, señalándome con la cabeza. Él me mira y sonríe como si ya nos conociéramos.<</beat>>
 <<beat>><<char "cocinera" "hide">><<say "mateo">>— ¿Así que sos nueva en el barrio? Bienvenida. Soy Mateo.<</say>><</beat>>
 <<beat>>Se sienta a mi mesa sin pedir permiso, y por alguna razón no me parece un atrevimiento. Me siento a gusto.<</beat>>
@@ -61,7 +61,7 @@
 
 :: San Telmo
 <<bg "background_21" "slow">>
-<<beat>>Unos días después me muestra San Telmo. Acá las calles son de adoquines que todavía recuerdan a los caballos. En la feria del domingo se vende de todo: sifones de soda antiguos, gramófonos, cucharitas de plata de las bisabuelas de alguien.<</beat>>
+<<beat>>Me llevó a conocer la famosa feria dominical, justo en el corazón del barrio de San Telmo. En la feria del domingo se vende de todo: sifones de soda antiguos, gramófonos, cucharitas de plata de las bisabuelas de alguien.<</beat>>
 <<beat>><<bg "background_22">>Al atardecer llegamos al río. No es azul ni gris, sino color té con leche, y tan ancho que parece el mar; no puedo dejar de mirarlo.<</beat>>
 <<beat>><<char "mateo" "right">><<say "mateo">>— El domingo que viene hacemos asado en casa. Toda la familia. ¿Querés venir?<</say>><</beat>>
 <<beat>><<char "yo" "left">><<say "yo">>— ¿Toda… la familia?<</say>><</beat>>

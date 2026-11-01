@@ -10,7 +10,7 @@
 <<bg "background_15">>
 <<beat>>Y ahí me aparece un mapa interactivo con los lugares de los migrantes.<</beat>>
 <<beat>>¿Continuar la historia?<<choices>>
-	<a class="link-external" target="_blank" rel="noopener" @href="setup.links.mapa">Abrir la aplicación externa con el mapa</a>
+	<a class="vn-ext" data-ext="mapa">Abrir la aplicación externa con el mapa</a>
 	[[Continuar la historia|Hambre]]
 <</choices>><</beat>>
 

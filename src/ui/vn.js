@@ -20,7 +20,30 @@ const $stage = $(`
 		<div id="vn-fx"></div>
 	</div>
 	<div id="vn-hud"></div>
+	<div id="vn-rotate" role="alert">
+		<svg viewBox="0 0 64 64" width="72" height="72" aria-hidden="true">
+			<rect x="20" y="6" width="24" height="52" rx="4" fill="none" stroke="currentColor" stroke-width="3"/>
+			<circle cx="32" cy="51" r="2" fill="currentColor"/>
+		</svg>
+		<p class="vn-rotate-title">Girá el teléfono</p>
+		<p>Este juego se ve mejor en horizontal.</p>
+	</div>
 `).prependTo(document.body);
+
+/*
+ * Hoja (tarjeta de texto) persistente: #vn-sheet envuelve a #passages y a #vn-card en la misma celda de grilla.
+ * Al cambiar de pasaje solo se funde el texto; la hoja queda quieta y se oculta solo si no hay nada que leer.
+ */
+function ensureSheet() {
+	if (document.getElementById('vn-sheet')) return;
+	const $passages = $('#passages');
+	$('<div id="vn-sheet"><div id="vn-card" aria-hidden="true"></div></div>').insertBefore($passages).append($passages);
+}
+
+function updateCard(passageEl) {
+	const empty = !passageEl || (!passageEl.textContent.trim() && !passageEl.querySelector('img, a, button, input'));
+	$('#story').toggleClass('vn-nocard', empty);
+}
 
 let currentBg = null;
 let bgLayer = 'a';
@@ -105,6 +128,7 @@ function showBeat(i) {
 	void $beat[0].offsetWidth; /* reinicia la animación */
 	$beat.addClass('vn-in').wiki(beats[i]);
 	$beat.toggleClass('vn-more', hasMore());
+	updateCard($beat.closest('.passage')[0]);
 	updateHud();
 }
 
@@ -115,6 +139,7 @@ function advance() {
 }
 
 $(document).on(':passagestart', () => {
+	ensureSheet();
 	beats = [];
 	beatIdx = 0;
 	nextPassage = null;
@@ -129,6 +154,8 @@ $(document).on(':passagerender', ev => {
 	if (beats.length) {
 		$beat = $('<div class="vn-beat"></div>').appendTo(ev.content);
 		showBeat(0);
+	} else {
+		updateCard(ev.content);
 	}
 });
 
@@ -137,13 +164,56 @@ $(document).on(':passagedisplay', () => {
 	updateHud();
 });
 
+/* ---------- Cartel «En desarrollo» para las otras partes del proyecto (a.vn-ext) ---------- */
+
+const $soon = $(`
+	<div id="vn-soon" class="vn-noadvance" role="dialog" aria-modal="true" aria-labelledby="vn-soon-title" hidden>
+		<div class="vn-soon-card">
+			<button type="button" class="vn-soon-close" aria-label="Cerrar">×</button>
+			<p class="vn-soon-part"></p>
+			<p id="vn-soon-title" class="vn-soon-title">En desarrollo</p>
+			<p>Esta parte del proyecto todavía no está lista. ¡Muy pronto!</p>
+		</div>
+	</div>
+`).appendTo(document.body);
+
+const soonOpen = () => !$soon.prop('hidden');
+
+function showSoon(key) {
+	$soon.find('.vn-soon-part').text(setup.ext?.[key] ?? '');
+	$soon.prop('hidden', false);
+	$soon.find('.vn-soon-close').trigger('focus');
+}
+
+function hideSoon() {
+	$soon.prop('hidden', true);
+}
+
+$(document).on('click', 'a.vn-ext', ev => {
+	ev.preventDefault();
+	showSoon($(ev.currentTarget).attr('data-ext'));
+});
+
+/* Se cierra con un clic/toque en cualquier lugar (también en la ×) */
+$soon.on('click', ev => {
+	ev.stopPropagation();
+	hideSoon();
+});
+
 $(document).on('click', ev => {
-	if (Dialog.isOpen()) return;
+	if (Dialog.isOpen() || soonOpen()) return;
 	if ($(ev.target).closest('a, button, input, select, textarea, label, #ui-bar, #ui-dialog, .vn-noadvance').length) return;
 	advance();
 });
 
 $(document).on('keydown', ev => {
+	if (soonOpen()) {
+		if (['Escape', 'Enter', ' '].includes(ev.key)) {
+			ev.preventDefault();
+			hideSoon();
+		}
+		return;
+	}
 	if (Dialog.isOpen() || $(ev.target).is('input, textarea, select')) return;
 	if (ev.key === ' ' || ev.key === 'Enter' || ev.key === 'ArrowRight') {
 		ev.preventDefault();
@@ -188,7 +258,7 @@ Macro.add('say', {
 		const id = this.args[0];
 		const def = setup.chars?.[id];
 		const $say = $('<div class="vn-say"></div>').attr('data-speaker', id);
-		$('<div class="vn-name"></div>').text(def ? def.name : id).css('color', def?.color ?? '').appendTo($say);
+		$('<div class="vn-name"></div>').text(def ? def.name : id).css('--vn-char', def?.color ?? '').appendTo($say);
 		$('<div class="vn-text"></div>').wiki(this.payload[0].contents).appendTo($say);
 		$say.appendTo(this.output);
 	}

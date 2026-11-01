@@ -1,18 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Kalam:wght@400;700&display=swap");
 
 :root {
-	--vn-box-bg: rgba(14, 12, 22, 0.78);
-	--vn-box-border: rgba(255, 255, 255, 0.12);
-	--vn-text: #f4efe6;
-	--vn-muted: #b9b2a6;
-	--vn-accent: #f2c14e;
-	--vn-font-text: "Noto Serif", Georgia, serif;
-	--vn-font-ui: "Noto Sans", system-ui, sans-serif;
+	/* Página de diario: papel crema rayado, tinta azul, margen rojo, cinta adhesiva */
+	--vn-paper: #f3e9d2;
+	--vn-ink: #22324f;
+	--vn-ink-soft: #5d6a80;
+	--vn-rule: rgba(80, 120, 175, 0.26);
+	--vn-margin: rgba(196, 70, 70, 0.55);
+	--vn-tape: rgba(232, 222, 188, 0.82);
+	--vn-highlight: rgba(255, 222, 90, 0.55);
+	--vn-line: 2rem;            /* interlineado = distancia entre renglones */
+	--vn-pad-top: 1.5rem;
+	--vn-pad-left: 3.6rem;      /* el texto empieza después del margen rojo */
+	--vn-margin-x: 2.7rem;
+	--vn-font-text: "Kalam", "Comic Sans MS", cursive;
+	--vn-font-hand: "Caveat", "Kalam", cursive;
+	--vn-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.42  0 0 0 0 0.30  0 0 0 0 0.16  0 0 0 0.10 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(#n)'/%3E%3C/svg%3E");
 }
 
 html, body {
 	background: #000;
-	color: var(--vn-text);
+	color: var(--vn-ink);
 	font-family: var(--vn-font-text);
 }
 
@@ -74,12 +82,12 @@ html, body {
 	top: 1rem;
 	right: 1rem;
 	z-index: 20;
-	padding: 0.35rem 0.9rem;
-	border-radius: 999px;
-	background: var(--vn-box-bg);
-	border: 1px solid var(--vn-box-border);
-	font: 600 0.85rem var(--vn-font-ui);
-	color: var(--vn-accent);
+	padding: 0.4rem 1rem 0.5rem;
+	background: #ffe98a;
+	box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+	transform: rotate(2deg);
+	font: 700 1.35rem var(--vn-font-hand);
+	color: var(--vn-ink);
 }
 
 /* Panel de SugarCube (guardar/cargar/reiniciar): plegado y discreto */
@@ -88,7 +96,8 @@ html, body {
 	border-color: transparent;
 }
 #ui-bar.stowed #ui-bar-toggle {
-	background: var(--vn-box-bg);
+	background: var(--vn-paper);
+	color: var(--vn-ink);
 	border-radius: 0 0 8px 0;
 }
 
@@ -107,11 +116,20 @@ html, body {
 	pointer-events: none;
 }
 
-/* Durante la transición SugarCube muestra dos pasajes a la vez: se superponen en la misma celda */
-#passages {
+/* #vn-sheet (creado en vn.js) = hoja persistente #vn-card + #passages superpuestos en la misma celda */
+#vn-sheet {
 	display: grid;
 	max-width: 62rem;
 	margin: 0 auto;
+}
+#vn-sheet > * { grid-area: 1 / 1; }
+
+/* Durante la transición SugarCube muestra dos pasajes a la vez: se superponen y el texto se funde */
+#passages {
+	display: grid;
+	position: relative;
+	max-width: none; /* SugarCube limita a 54em y centra: el texto debe ocupar toda la hoja */
+	margin: 0;
 	pointer-events: auto;
 }
 
@@ -120,31 +138,57 @@ html, body {
 	align-self: end;
 }
 
-/* Al entrar o salir de un menú, el pasaje saliente pierde su estilo: se oculta en el acto */
+.passage-out { opacity: 0; transition-duration: 150ms; } /* el texto saliente se va antes de que entre el nuevo */
+
+/* Al entrar o salir de un menú la hoja cambia de forma: el pasaje saliente se oculta en el acto */
 .passage-out[data-tags~="menu"],
 body[data-tags~="menu"] .passage-out {
 	display: none;
 }
 
+/* Texto del pasaje: sin fondo propio, va sobre la hoja */
 .passage {
 	position: relative;
-	min-height: 10rem; /* altura fija para ~4 líneas: la caja no salta entre réplicas */
-	padding: 1.25rem 1.75rem 1.5rem;
-	background: var(--vn-box-bg);
-	border: 1px solid var(--vn-box-border);
-	border-radius: 14px;
-	backdrop-filter: blur(6px);
-	font-size: 1.15rem;
-	line-height: 1.55;
+	min-height: 10rem; /* altura fija: la hoja no salta entre réplicas */
+	padding: var(--vn-pad-top) 2.2rem 1.6rem var(--vn-pad-left);
+	color: var(--vn-ink);
+	font-family: var(--vn-font-text);
+	font-size: 1.22rem;
+	line-height: var(--vn-line);
 	cursor: pointer;
 }
 
-/* Pasajes que solo cambian la imagen: sin caja */
-.passage:has(> .vn-beat:only-child:empty) {
-	background: transparent;
-	border-color: transparent;
-	backdrop-filter: none;
+/* Hoja de diario: renglones alineados con el interlineado, margen rojo, dos tiras de cinta */
+#vn-card {
+	position: relative;
+	pointer-events: none;
+	transition: opacity 250ms ease;
+	background:
+		var(--vn-noise),
+		linear-gradient(to right, transparent var(--vn-margin-x), var(--vn-margin) var(--vn-margin-x), var(--vn-margin) calc(var(--vn-margin-x) + 1.5px), transparent calc(var(--vn-margin-x) + 1.5px)),
+		repeating-linear-gradient(to bottom, transparent 0, transparent calc(var(--vn-line) - 1px), var(--vn-rule) calc(var(--vn-line) - 1px), var(--vn-rule) var(--vn-line)),
+		var(--vn-paper);
+	background-position: 0 0, 0 0, 0 var(--vn-pad-top), 0 0;
+	border-radius: 2px 2px 3px 3px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08), 0 12px 28px rgba(0, 0, 0, 0.5);
 }
+
+#vn-card::before,
+#vn-card::after {
+	content: "";
+	position: absolute;
+	top: -0.7rem;
+	width: 6.5rem;
+	height: 1.5rem;
+	background: var(--vn-tape);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+	pointer-events: none;
+}
+#vn-card::before { left: 1.2rem; transform: rotate(-4deg); }
+#vn-card::after  { right: 1.4rem; transform: rotate(3deg); }
+
+/* Momentos sin texto (solo imagen): la hoja se esconde (clase puesta por vn.js) */
+#story.vn-nocard #vn-card { opacity: 0; }
 
 .vn-beat.vn-in { animation: vn-fade-in 350ms ease both; }
 
@@ -154,62 +198,77 @@ body[data-tags~="menu"] .passage-out {
 }
 
 .vn-beat.vn-more::after {
-	content: "▸";
+	content: "→";
 	position: absolute;
-	right: 1.1rem;
-	bottom: 0.7rem;
-	color: var(--vn-accent);
-	animation: vn-blink 1.2s ease-in-out infinite;
+	right: 1.4rem;
+	bottom: 0.4rem;
+	font: 700 1.8rem/1 var(--vn-font-hand);
+	color: var(--vn-ink-soft);
+	animation: vn-nudge 1.2s ease-in-out infinite;
 }
 
-@keyframes vn-blink { 50% { opacity: 0.25; } }
+@keyframes vn-nudge { 50% { transform: translateX(5px); opacity: 0.5; } }
 
-.vn-say + .vn-say { margin-top: 0.75rem; }
-
+/* Quién habla: firma a mano en el color de tinta del personaje (setup.chars) */
 .vn-name {
-	font: 600 0.85rem var(--vn-font-ui);
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-	color: var(--vn-accent);
-	margin-bottom: 0.2rem;
+	font: 700 1.6rem/var(--vn-line) var(--vn-font-hand);
+	color: var(--vn-char, var(--vn-ink));
+	text-transform: lowercase;
 }
-
-.vn-say[data-speaker="yo"] .vn-text { font-style: italic; }
+.vn-name::first-letter { text-transform: uppercase; }
+.vn-name::after { content: ":"; }
 
 .vn-sfx {
-	font: italic 0.95rem var(--vn-font-ui);
-	color: var(--vn-muted);
+	font: 500 1.45rem var(--vn-font-hand);
+	color: var(--vn-ink-soft);
 }
 
-/* ---------- Opciones ---------- */
+/* ---------- Opciones: lista con viñetas; al pasar el mouse, subrayado con resaltador ---------- */
 
 .vn-choices {
-	display: flex;
-	flex-direction: column;
-	gap: 0.6rem;
-	margin-top: 0.9rem;
+	display: block;
+	padding-left: 1.5rem;
 }
 
-.vn-choices a,
-.vn-choices button {
-	display: block;
-	padding: 0.7rem 1rem;
-	border: 1px solid var(--vn-box-border);
-	border-radius: 10px;
-	background: rgba(255, 255, 255, 0.06);
-	color: var(--vn-text);
-	font: 1rem/1.4 var(--vn-font-text);
-	text-align: left;
+/* Enlaces en línea: el resaltador pinta cada renglón por separado (box-decoration-break) */
+.vn-choices a {
+	display: inline;
+	position: relative;
+	margin-left: -0.2em;
+	padding: 0.1em 0.2em;
+	border-radius: 0.5em 0.2em 0.45em 0.25em;
+	color: var(--vn-ink);
+	font: 1.12rem/var(--vn-line) var(--vn-font-text);
 	text-decoration: none;
-	transition: background 150ms ease, border-color 150ms ease;
+	background-image: linear-gradient(100deg, rgba(255, 222, 90, 0.2) 0, var(--vn-highlight) 0.35em, var(--vn-highlight) 94%, rgba(255, 222, 90, 0.15) 100%);
+	background-repeat: no-repeat;
+	background-position: 0 60%;
+	background-size: 0% 72%;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+	transition: background-size 300ms ease-out;
+}
+
+.vn-choices a::before {
+	content: "•";
+	position: absolute;
+	left: -1.1rem;
+	top: 0;
+	font: 700 1.7rem/var(--vn-line) var(--vn-font-text);
+	color: var(--vn-ink);
+}
+
+/* cada opción en su propio renglón */
+.vn-choices a::after {
+	content: "\A";
+	white-space: pre;
 }
 
 .vn-choices a:hover,
-.vn-choices a:focus-visible,
-.vn-choices button:hover {
-	background: rgba(242, 193, 78, 0.16);
-	border-color: var(--vn-accent);
-	color: var(--vn-text);
+.vn-choices a:focus-visible {
+	background-size: 100% 72%;
+	color: var(--vn-ink);
+	outline: none;
 }
 
 /* ---------- Pantallas de menú (tag: menu) ---------- */
@@ -221,27 +280,180 @@ body[data-tags~="menu"] #story {
 	overflow-y: auto;
 }
 
-body[data-tags~="menu"] #passages { width: 100%; max-width: 46rem; margin: auto; }
+body[data-tags~="menu"] #vn-sheet { width: 100%; max-width: 46rem; margin: auto; }
 
 body[data-tags~="menu"] .passage {
-	padding: 2rem 2.25rem;
+	padding: calc(var(--vn-pad-top) + var(--vn-line)) 2.6rem 2rem var(--vn-pad-left);
 	cursor: default;
-	font-size: 1.05rem;
+	font-size: 1.12rem;
 }
 
 body[data-tags~="menu"] h1 {
-	margin: 0 0 1rem;
-	font: 600 2.4rem/1.15 var(--vn-font-text);
-	color: var(--vn-accent);
+	margin: calc(-1 * var(--vn-line)) 0 var(--vn-line);
+	font: 700 3rem/calc(2 * var(--vn-line)) var(--vn-font-hand);
+	color: var(--vn-ink);
+	text-align: center;
 }
 
-body[data-tags~="menu"] .vn-choices { flex-direction: row; flex-wrap: wrap; }
-body[data-tags~="menu"] .vn-choices a { text-align: center; flex: 1 1 10rem; font-family: var(--vn-font-ui); font-weight: 600; }
-body[data-tags~="menu"] .vn-choices a.vn-primary { flex-basis: 100%; background: var(--vn-accent); color: #1b1408; border-color: var(--vn-accent); }
+body[data-tags~="menu"] p { margin: 0; text-indent: 1.5rem; }
+
+body[data-tags~="menu"] .vn-choices {
+	display: flex;
+	padding-left: 0;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0 1.6rem;
+	margin-top: var(--vn-line);
+}
+body[data-tags~="menu"] .vn-choices a {
+	padding: 0 0.5rem;
+	font: 700 1.6rem/var(--vn-line) var(--vn-font-hand);
+	text-decoration: underline 1.5px;
+	text-underline-offset: 4px;
+}
+body[data-tags~="menu"] .vn-choices a { display: block; margin-left: 0; }
+body[data-tags~="menu"] .vn-choices a::before,
+body[data-tags~="menu"] .vn-choices a::after { content: none; }
+body[data-tags~="menu"] .vn-choices a.vn-primary {
+	flex-basis: 100%;
+	margin-bottom: 0.4rem;
+	font-size: 2.1rem;
+	line-height: calc(1.5 * var(--vn-line));
+	text-align: center;
+	text-decoration: none;
+	background-size: 100% 72%;
+}
+body[data-tags~="menu"] .vn-choices a.vn-primary:hover { background-image: linear-gradient(100deg, rgba(255, 222, 90, 0.5) 0, rgba(255, 222, 90, 0.85) 0.35em, rgba(255, 222, 90, 0.85) 94%, rgba(255, 222, 90, 0.4) 100%); }
+
+/* ---------- Teléfono en horizontal (pantallas bajas): hoja compacta para no tapar la imagen ---------- */
+
+@media (max-height: 500px) {
+	:root { --vn-line: 1.3rem; --vn-pad-top: 0.55rem; --vn-pad-left: 2.2rem; --vn-margin-x: 1.55rem; }
+	#story,
+	#ui-bar ~ #story,
+	#ui-bar.stowed ~ #story { padding: 0 0.75rem 0.5rem; }
+	.passage {
+		min-height: calc(3 * var(--vn-line) + 1.2rem); /* 3 renglones */
+		max-height: calc(100vh - 1rem);
+		overflow-y: auto;
+		padding: var(--vn-pad-top) 1.6rem 0.65rem var(--vn-pad-left);
+		font-size: 0.92rem;
+	}
+	#vn-card::before,
+	#vn-card::after { width: 3.4rem; height: 0.9rem; top: -0.4rem; }
+	.vn-name { font-size: 1.15rem; }
+	.vn-sfx { font-size: 1.1rem; }
+	.vn-choices { padding-left: 1.1rem; }
+	.vn-choices a { font-size: 0.86rem; }
+	.vn-choices a::before { left: -0.85rem; font-size: 1.2rem; }
+	.vn-beat.vn-more::after { right: 0.7rem; bottom: 0.1rem; font-size: 1.2rem; }
+	#vn-hud { top: 0.4rem; right: 0.5rem; padding: 0.1rem 0.6rem 0.2rem; font-size: 1rem; }
+	body[data-tags~="menu"] .passage { max-height: none; overflow: visible; padding: calc(var(--vn-pad-top) + var(--vn-line)) 1.6rem 1rem var(--vn-pad-left); }
+	body[data-tags~="menu"] h1 { font-size: 2rem; }
+	body[data-tags~="menu"] .vn-choices a { font-size: 1.25rem; }
+	body[data-tags~="menu"] .vn-choices a.vn-primary { font-size: 1.6rem; }
+}
+
+/* ---------- Cartel «En desarrollo» (enlaces a otras partes del proyecto) ---------- */
+
+#vn-soon {
+	position: fixed;
+	inset: 0;
+	z-index: 90;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	background: rgba(0, 0, 0, 0.45);
+	cursor: pointer;
+	animation: vn-fade-in 200ms ease both;
+}
+#vn-soon[hidden] { display: none; }
+
+.vn-soon-card {
+	position: relative;
+	width: min(24rem, 100%);
+	padding: 1.8rem 2rem 1.6rem;
+	background: var(--vn-noise), var(--vn-paper);
+	box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5);
+	transform: rotate(-1.5deg);
+	color: var(--vn-ink);
+	font: 1.1rem/1.5 var(--vn-font-text);
+	text-align: center;
+}
+
+.vn-soon-card::before {
+	content: "";
+	position: absolute;
+	top: -0.7rem;
+	left: 50%;
+	width: 6rem;
+	height: 1.5rem;
+	background: var(--vn-tape);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+	transform: translateX(-50%) rotate(2deg);
+}
+
+.vn-soon-card p { margin: 0; }
+.vn-soon-part { font: 700 1.3rem/1.2 var(--vn-font-hand); color: var(--vn-ink-soft); }
+.vn-soon-part:empty { display: none; }
+.vn-soon-title { margin: 0.1rem 0 0.5rem !important; font: 700 2.4rem/1.15 var(--vn-font-hand); }
+
+.vn-soon-close {
+	position: absolute;
+	top: 0.25rem;
+	right: 0.35rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var(--vn-ink-soft);
+	font: 700 2rem/1 var(--vn-font-hand);
+	cursor: pointer;
+}
+.vn-soon-close:hover,
+.vn-soon-close:focus-visible { color: var(--vn-ink); outline: none; }
+
+/* ---------- Pedido de girar el teléfono (pantalla de inicio en vertical, tag: inicio) ---------- */
+
+#vn-rotate {
+	display: none;
+	position: fixed;
+	inset: 0;
+	z-index: 100;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	padding: 2rem;
+	text-align: center;
+	background: var(--vn-noise), var(--vn-paper);
+	color: var(--vn-ink);
+	font: 1.15rem/1.5 var(--vn-font-text);
+}
+
+#vn-rotate p { margin: 0; }
+#vn-rotate .vn-rotate-title { font: 700 2.4rem/1.2 var(--vn-font-hand); }
+#vn-rotate svg { margin-bottom: 1rem; animation: vn-rotate-phone 2.4s ease-in-out infinite; }
+
+@keyframes vn-rotate-phone {
+	0%, 25%   { transform: rotate(0deg); }
+	55%, 85%  { transform: rotate(-90deg); }
+	100%      { transform: rotate(0deg); }
+}
+
+@media (orientation: portrait) and (pointer: coarse) and (max-width: 900px) {
+	body[data-tags~="inicio"] #vn-rotate { display: flex; }
+}
 
 @media (max-width: 640px) {
-	.passage { font-size: 1rem; padding: 1rem 1.1rem 1.3rem; }
-	.passage { min-height: 11rem; }
-	#vn-chars img { height: 62vh; max-width: 80vw; }
-	body[data-tags~="menu"] h1 { font-size: 1.8rem; }
+	:root { --vn-pad-left: 2.6rem; --vn-margin-x: 1.9rem; --vn-line: 1.8rem; }
+	.passage { font-size: 1.08rem; padding-right: 1.3rem; }
+	#vn-card::before, #vn-card::after { width: 4.5rem; }
+	/* Sprites anchos se achican por ancho: se suben para que no queden tapados por la caja */
+	#vn-chars img { height: 60vh; bottom: 20vh; max-width: 100vw; }
+	body[data-tags~="menu"] .passage { padding-right: 1.4rem; }
+	body[data-tags~="menu"] h1 { font-size: 2.3rem; }
 }

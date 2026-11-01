@@ -1,8 +1,7 @@
 :: Aeropuerto
 <<bg "background_01" "slow">>
-<<beat>>Las puertas del aeropuerto se abren.<</beat>>
-<<beat>>Lo primero que conozco de Buenos Aires es su olor. Húmedo y cálido, con un dejo a río, a nafta y a algo dulce, como si cerca acabaran de sacar facturas del horno.<</beat>>
-<<beat>><<bg "background_02">>Salgo del aeropuerto con una sola valija y una mochila. Todo lo demás que tengo lo llevo adentro.<</beat>>
+<<beat>>Lo primero que percibo al salir del aeropuerto es a las familias abrazándose en una caravana de puro amor. Después, carteles de alfajores de mil marcas distintas y, justo enfrente, un río tan inmenso que no le veo el fin y se confunde con el mar.<</beat>>
+<<beat>><<bg "background_02">>Salgo del aeropuerto con una sola valija y una mochila. Todo lo demás que tengo lo llevo adentro de mis pensamientos.<</beat>>
 <<beat>><<choices>>[[Subir al taxi|Taxi]]<</choices>><</beat>>
 
 
@@ -10,8 +9,8 @@
 <<bg "background_03">>
 <<beat>><<say "taxista">>— ¿Primera vez en Buenos Aires?<</say>><</beat>>
 <<beat>><<say "yo">>— Sí. Primera vez.<</say>><</beat>>
-<<beat>><<say "taxista">>— Ah, entonces mirá bien por la ventana. Esta ciudad no se repite.<</say>><</beat>>
-<<beat>><<bg "background_05-face01">>Miro mi reflejo en el vidrio. Una noche sin dormir en el avión, el pelo que nunca llegué a arreglar. Bueno. Así me va a ver esta ciudad por primera vez.<</beat>>
+<<beat>><<say "taxista">>— Ah, entonces mirá bien por la ventana. Esta ciudad es irrepetible.<</say>><</beat>>
+<<beat>><<bg "background_04">>Miro mi reflejo en el vidrio. No me pude ni arreglar el pelo, mucho menos lavarme la cara. Bueno... espero que esta ciudad me mire así como estoy y decida ser amable.<</beat>>
 <<beat>><<choices>>
 	[[Mirar por la ventana|Autopista]]
 	[[Elegir mi apariencia|Apariencia]]
@@ -37,10 +36,10 @@
 
 :: Autopista
 <<bg "background_06-01">>
-<<beat>>Al principio la ciudad se esconde detrás de la autopista: depósitos, carteles publicitarios, casas bajas con techos planos donde se seca la ropa, como banderas de pequeños países.<</beat>>
+<<beat>>La entrada a la ciudad es una maraña de autopistas que me tapan la vista. Sin embargo, apenas el taxi baja de ese cemento elevado, la ciudad se abre y aparecen fachadas y diseños arquitectónicos que te dejan deslumbrada.<</beat>>
 <<beat>><<bg "background_06-02">><</beat>>
 <<beat>><<bg "background_06-03">><</beat>>
-<<beat>><<bg "background_07-face01">>Y de pronto se abre. Pasamos por…<<choices>>
+<<beat>><<bg "background_07-face01">>Pasamos por…<<choices>>
 	[[Avenida 9 de Julio. El Obelisco.|Nueve de Julio]]
 	[[Avenida de Mayo, fachadas antiguas, balcones de hierro forjado.|Avenida de Mayo]]
 <</choices>><</beat>>
