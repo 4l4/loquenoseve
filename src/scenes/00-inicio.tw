@@ -9,6 +9,7 @@
 <p>Recorré tu camino y descubrí en quién te convertís en una ciudad que no se repite.</p>
 <<choices>>
 	<a class="vn-primary" data-passage="Aeropuerto">Empezar el juego</a>
+	<span class="vn-choices-label">Otras partes de nuestro proyecto</span>
 	<a class="vn-ext" data-ext="mapa">Mapa</a>
 	<a class="vn-ext" data-ext="recetas">Recetas</a>
 	<a class="vn-ext" data-ext="pelicula">Película</a>
