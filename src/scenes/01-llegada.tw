@@ -39,7 +39,7 @@
 <<beat>>La entrada a la ciudad es una maraña de autopistas que me tapan la vista. Sin embargo, apenas el taxi baja de ese cemento elevado, la ciudad se abre y aparecen fachadas y diseños arquitectónicos que te dejan deslumbrada.<</beat>>
 <<beat>><<bg "background_06-02">><</beat>>
 <<beat>><<bg "background_06-03">><</beat>>
-<<beat>><<bg "background_07-face01">>Pasamos por…<<choices>>
+<<beat>><<bg "background_07-face01">>Pero de pronto se abre. Pasamos por…<<choices>>
 	[[Avenida 9 de Julio. El Obelisco.|Nueve de Julio]]
 	[[Avenida de Mayo, fachadas antiguas, balcones de hierro forjado.|Avenida de Mayo]]
 <</choices>><</beat>>
